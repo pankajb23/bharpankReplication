@@ -1,0 +1,159 @@
+{
+  "metainfo" : {
+    "id" : "1",
+    "uri" : "pipelines/NEwPipeline01",
+    "language" : "python",
+    "fabricId" : "439",
+    "frontEndLanguage" : "sql",
+    "mode" : "batch",
+    "udfs" : {
+      "language" : "python",
+      "udfs" : [ ],
+      "functionPackageName" : "sonyprophecyioteam.subpathproject.functions",
+      "sharedFunctionPackageNames" : [ ]
+    },
+    "udafs" : {
+      "language" : "python",
+      "code" : ""
+    },
+    "configuration" : {
+      "common" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "oldCommon" : {
+        "type" : "record",
+        "fields" : [ ]
+      },
+      "fabrics" : { },
+      "instances" : { },
+      "selected" : "default",
+      "nonEditable" : [ ],
+      "isSubscribedPipelineWithPipelineConfigs" : false
+    },
+    "sparkConf" : [ ],
+    "hadoopConf" : [ ],
+    "codeMode" : "sparse",
+    "buildSystem" : "maven",
+    "externalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ ],
+    "isImported" : false,
+    "interimMode" : "Full",
+    "interimModeEnabled" : true,
+    "visualCodeInterimMode" : "Disabled",
+    "recordsLimit" : {
+      "enabled" : false,
+      "value" : 1000
+    },
+    "topLevelPackage" : "newpipeline01",
+    "configurationVersion" : "v1"
+  },
+  "connections" : [ {
+    "id" : "N1GNBpsWrS6UPE_WDz_yY",
+    "source" : "X-DHv2LoHlo-fElSc2rgj$$xiNogkQXCAsgIy601IIq6",
+    "sourcePort" : "ua23dCW9AzvMfdk94olFr$$1Z1pBOvcdV3M0y7Ia28X3",
+    "target" : "W0rKV2E66J2z6Fu4urjzf$$MrHzIu5Ejo06gmpx2jt8u",
+    "targetPort" : "buPNFfpQUK5SmJV2Ruqqd$$TDMTqiQkoYTo4bu78KbiH"
+  } ],
+  "processes" : {
+    "X-DHv2LoHlo-fElSc2rgj$$xiNogkQXCAsgIy601IIq6" : {
+      "id" : "X-DHv2LoHlo-fElSc2rgj$$xiNogkQXCAsgIy601IIq6",
+      "component" : "Source",
+      "metadata" : {
+        "label" : "Source_0",
+        "slug" : "Source_0",
+        "x" : -660,
+        "y" : -300,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ ],
+        "outputs" : [ {
+          "id" : "ua23dCW9AzvMfdk94olFr$$1Z1pBOvcdV3M0y7Ia28X3",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : { }
+    },
+    "W0rKV2E66J2z6Fu4urjzf$$MrHzIu5Ejo06gmpx2jt8u" : {
+      "id" : "W0rKV2E66J2z6Fu4urjzf$$MrHzIu5Ejo06gmpx2jt8u",
+      "component" : "Filter",
+      "metadata" : {
+        "label" : "Filter_1",
+        "slug" : "Filter_1",
+        "x" : -520,
+        "y" : -300,
+        "phase" : 0,
+        "cache" : false,
+        "detailedStats" : false,
+        "isImported" : false
+      },
+      "ports" : {
+        "inputs" : [ {
+          "id" : "buPNFfpQUK5SmJV2Ruqqd$$TDMTqiQkoYTo4bu78KbiH",
+          "slug" : "in0"
+        } ],
+        "outputs" : [ {
+          "id" : "SKATQ7DsQ2QNbqdcKxHX2$$ms8IKCAStxnwcpjlxZp0_",
+          "slug" : "out"
+        } ],
+        "selectedInputFields" : [ ],
+        "isCustomOutputSchema" : false,
+        "autoUpdateOnRun" : false
+      },
+      "properties" : {
+        "columnsSelector" : [ ],
+        "condition" : {
+          "format" : "sql",
+          "expression" : "true"
+        }
+      }
+    }
+  },
+  "ports" : {
+    "inputs" : [ ],
+    "outputs" : [ ],
+    "selectedInputFields" : [ ],
+    "isCustomOutputSchema" : false,
+    "autoUpdateOnRun" : false
+  },
+  "diagnostics" : [ {
+    "property" : "$.workflow.processes.X-DHv2LoHlo-fElSc2rgj$$xiNogkQXCAsgIy601IIq6.properties.datasetId",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "dataset id missing",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  }, {
+    "property" : "$.workflow.processes.W0rKV2E66J2z6Fu4urjzf$$MrHzIu5Ejo06gmpx2jt8u",
+    "range" : {
+      "start" : {
+        "line" : 0,
+        "character" : 0
+      },
+      "end" : {
+        "line" : 0,
+        "character" : 0
+      }
+    },
+    "severity" : 1,
+    "message" : "One of the upstream gems is broken. Please, fix it first.",
+    "tags" : [ ],
+    "relatedInformation" : [ ]
+  } ]
+}
