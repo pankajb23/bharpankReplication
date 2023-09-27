@@ -15,3 +15,7 @@ Changes a lot of changes.
 *** Release notes for version: 1.11 ***
 
 Changes
+
+*** Release notes for version: 1.12 ***
+
+Changes
