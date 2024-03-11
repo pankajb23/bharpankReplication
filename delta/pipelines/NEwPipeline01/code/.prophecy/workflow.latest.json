@@ -1,16 +1,19 @@
 {
   "metainfo" : {
+    "migrationVersions" : {
+      "gemBuilderVersion" : "v1"
+    },
     "id" : "1",
     "uri" : "pipelines/NEwPipeline01",
     "language" : "python",
-    "fabricId" : "439",
+    "fabricId" : "7",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
       "language" : "python",
       "udfs" : [ ],
       "functionPackageName" : "sonyprophecyioteam.subpathproject.functions",
-      "sharedFunctionPackageNames" : [ ]
+      "sharedFunctionPackageNames" : [ "prophecy.spark_basic.functions", "prophecy.warehouse.functions" ]
     },
     "udafs" : {
       "language" : "python",
@@ -36,7 +39,15 @@
     "codeMode" : "sparse",
     "buildSystem" : "maven",
     "externalDependencies" : [ ],
-    "dependentProjectExternalDependencies" : [ ],
+    "dependentProjectExternalDependencies" : [ {
+      "projectUID" : "33",
+      "projectName" : "ProphecySparkBasicsPython",
+      "externalDependencies" : [ ]
+    }, {
+      "projectUID" : "34",
+      "projectName" : "ProphecyWarehousePython",
+      "externalDependencies" : [ ]
+    } ],
     "isImported" : false,
     "interimMode" : "Full",
     "interimModeEnabled" : true,
@@ -113,6 +124,10 @@
           "format" : "sql",
           "expression" : "true"
         }
+      },
+      "componentInfo" : {
+        "gemId" : "gitUri=http://gitserver:3000/DTAcEZUO_team_5/iaRHA2Zs_project_33.git&subPath=&tag=0.2.4&projectSubscriptionProjectId=33&path=gems/Filter",
+        "projectName" : "ProphecySparkBasicsPython"
       }
     }
   },
@@ -138,7 +153,8 @@
     "severity" : 1,
     "message" : "dataset id missing",
     "tags" : [ ],
-    "relatedInformation" : [ ]
+    "relatedInformation" : [ ],
+    "diagnosticType" : 1
   }, {
     "property" : "$.workflow.processes.W0rKV2E66J2z6Fu4urjzf$$MrHzIu5Ejo06gmpx2jt8u",
     "range" : {
@@ -151,9 +167,10 @@
         "character" : 0
       }
     },
-    "severity" : 1,
+    "severity" : 2,
     "message" : "One of the upstream gems is broken. Please, fix it first.",
     "tags" : [ ],
-    "relatedInformation" : [ ]
+    "relatedInformation" : [ ],
+    "diagnosticType" : 1
   } ]
 }

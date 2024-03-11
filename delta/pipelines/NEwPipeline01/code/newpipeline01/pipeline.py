@@ -1,7 +1,6 @@
 from pyspark.sql import *
 from pyspark.sql.functions import *
 from pyspark.sql.types import *
-from prophecy.utils import *
 from newpipeline01.config.ConfigStore import *
 from newpipeline01.udfs.UDFs import *
 from prophecy.utils import *
