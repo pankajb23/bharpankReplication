@@ -1,0 +1,56 @@
+name: ExternalSubPathRelease001
+description: ''
+version: '1.0'
+author: null
+language: python
+buildSystem: ''
+buildSystemDetails:
+  artefactID: externalsubpathrelease001
+  parentArtefactID: ''
+  buildSystem: wheel
+  author: null
+  createdAt: '2024-03-12 10:37:06'
+pipelines: {}
+datasets: {}
+templates: {}
+jobs: {}
+gemContainer:
+  languageVersion: ''
+  gemLibsVersion: ''
+  gems: {}
+  dependencies: null
+functions:
+  author: null
+  createdAt: '2024-03-12 10:37:06'
+  udfs: {}
+  udafs: {}
+  expressions: {}
+  airflowFunctions: {}
+subgraphs: {}
+sqlModels: {}
+sqlMacros: {}
+sqlSeeds: {}
+sqlSources: {}
+sqlUnreferencedSources: {}
+sqlPipeline: null
+dependencies: '[]'
+projectDependencies:
+  '33':
+    projectUID: 33
+    projectName: ProphecySparkBasicsPython
+    repositoryPath: gitUri=http://gitserver:3000/DTAcEZUO_team_5/iaRHA2Zs_project_33.git&subPath=
+    version: 0.2.4
+    isDefault: true
+    author: null
+    createdAt: '2024-03-12 08:50:36'
+  '34':
+    projectUID: 34
+    projectName: ProphecyWarehousePython
+    repositoryPath: gitUri=http://gitserver:3000/DTAcEZUO_team_5/iaRHA2Zs_project_34.git&subPath=
+    version: 0.0.3
+    isDefault: true
+    author: null
+    createdAt: '2024-03-12 08:50:36'
+flags:
+  shouldAddDefaultDependenciesIfAbsent: true
+pipelineConfigurations: {}
