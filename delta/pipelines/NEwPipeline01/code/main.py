@@ -1,3 +1,3 @@
-from newpipeline01.pipeline import main
+from newpipeline01.a.b.v.d.pipeline import main
 
 main()

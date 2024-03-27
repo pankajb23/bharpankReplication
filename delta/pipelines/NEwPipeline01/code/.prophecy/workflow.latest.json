@@ -6,7 +6,7 @@
     "id" : "1",
     "uri" : "pipelines/NEwPipeline01",
     "language" : "python",
-    "fabricId" : "7",
+    "fabricId" : "8",
     "frontEndLanguage" : "sql",
     "mode" : "batch",
     "udfs" : {
@@ -56,7 +56,7 @@
       "enabled" : false,
       "value" : 1000
     },
-    "topLevelPackage" : "newpipeline01",
+    "topLevelPackage" : "newpipeline01.a.b.v.d",
     "configurationVersion" : "v1"
   },
   "connections" : [ {
